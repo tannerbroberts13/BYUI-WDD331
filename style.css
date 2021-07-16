@@ -259,7 +259,14 @@ h6 {
   }
 }
 
-.page-wrapper::after {
-   content: url(/leaf-2.svg);
-   animation: 
+.page-wrapper::before {
+   content:
+   url(leaf-1.svg)
+   url(leaf-2.svg)
+   url(leaf-3.svg);
+}
+
+@keyframes fall {
+   0% {transform: translate(0,0);}
+   100% {transform: translate(100, 100)}
 }
